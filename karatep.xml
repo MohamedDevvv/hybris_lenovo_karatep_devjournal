@@ -12,4 +12,7 @@
 	<project path="vendor/lenovo"
 		name="HyperTeam/proprietary_vendor_lenovo"
 		revision="lineage-18.1" />
+	<project path="packages/resources/devicesettings"
+		name="LineageOS/android_packages_resources_devicesettings"
+		revision="lineage-18.1" />
 </manifest>
