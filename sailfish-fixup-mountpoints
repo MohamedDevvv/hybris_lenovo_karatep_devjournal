@@ -1,0 +1,46 @@
+#!/bin/sh
+# Fix up mount points device node names.
+#
+# /data needs to be mounted in initrd, but there is no udev that early,
+# which means there is no /dev/block/platform/*/by-name/* (or bootdevice).
+# This file is a map from the "by-name" path to /dev/mmcblkMpN.
+# It also serves dhd to convert fstab and *.rc mount entries to systemd units,
+# because at that boot stage there is still no udev "by-name" paths, even when
+# systemd starts to execut the "*.mount" units.
+
+DEVICE=$1
+shift
+
+echo "Fixing mount-points for device $DEVICE"
+
+case "$DEVICE" in
+    "karatep")
+        sed -i \
+            -e 's block/bootdevice/by-name/boot boot' \
+            -e 's block/bootdevice/by-name/recovery recovery'\
+            -e 's block/bootdevice/by-name/system system'\
+            -e 's block/bootdevice/by-name/vendor vendor'\
+            -e 's block/bootdevice/by-name/userdata data'\
+            -e 's block/bootdevice/by-name/cache cache'\
+            -e 's block/bootdevice/by-name/persist persist'\
+            -e 's block/bootdevice/by-name/dsp dsp'\
+            -e 's block/bootdevice/by-name/modem firmware'\
+            -e 's block/bootdevice/by-name/misc misc'\
+
+            "$@"
+        ;;
+    *)
+        cat <<EOF
+
+****************************************************************
+****************************************************************
+ERROR: $DEVICE does not have mountpoint fixup data - see
+       Sailfish OS HADK for details on how to fix this.
+****************************************************************
+****************************************************************
+
+EOF
+        exit 1
+        ;;
+esac
+
