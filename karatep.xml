@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<project path="device/lenovo/karatep"
+		name="HyperTeam/android_device_lenovo_karatep"
+		revision="lineage-18.1" />
+	<project path="device/lenovo/karate-common"
+		name="HyperTeam/android_device_lenovo_karate-common"
+		revision="lineage-18.1" />
+	<project path="kernel/lenovo/msm8937"
+		name="HyperTeam/android_kernel_lenovo_msm8937"
+		revision="lineage-18.1" />
+	<project path="vendor/lenovo"
+		name="HyperTeam/proprietary_vendor_lenovo"
+		revision="lineage-18.1" />
+</manifest>
