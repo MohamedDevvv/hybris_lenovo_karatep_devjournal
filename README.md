@@ -7,7 +7,7 @@ Notes:
 - Make selinux permissive by setting selinux=1 in kernel bootflags
 - Copy selinux files from /vendor on device while applying hybris-17.1 patched mentioned in hadk-faq. Do not symlink, replace with actual files (Thanks @mal)
 - /system -> / system partition is actually android root partition and the actual system is in /system/system so replacing /system with / in fstab. fstab is at: device/lenovo/karate-common/rootdir/etc/fstab.qcom (Thanks @mal)
-- Disable audit by setting audit=0 in kernel bootflags (Thanks @elros34)
+- Disable audit logs by setting audit=0 in kernel bootflags (Thanks @elros34)
 - Stop system init to prevent bootloop: Create file init_enter_debug2 to sailfish os root i.e. in /data/.stowaways/sailfishos/init_enter_debug2 (Thanks @mal)
 
 Resources:
