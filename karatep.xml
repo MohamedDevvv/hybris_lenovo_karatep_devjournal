@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<project path="device/lenovo/karatep"
-		name="HyperTeam/android_device_lenovo_karatep"
-		revision="lineage-18.1" />
+		name="Sailfish-on-karatep/android_device_lenovo_karatep"
+		revision="hybris-18.1" />
 	<project path="device/lenovo/karate-common"
-		name="HyperTeam/android_device_lenovo_karate-common"
-		revision="lineage-18.1" />
-	<!-- <project path="kernel/lenovo/msm8937"
-		name="HyperTeam/android_kernel_lenovo_msm8937"
-		revision="lineage-18.1" /> -->
+		name="Sailfish-on-karatep/android_device_lenovo_karate-common"
+		revision="hybris-18.1" />
 	<project path="kernel/lenovo/msm8937"
-		name="theflyingrahul/android_kernel_lenovo_msm8937"
+		name="Sailfish-on-karatep/android_kernel_lenovo_msm8937"
 		revision="hybris-18.1" />
 	<project path="vendor/lenovo"
-		name="HyperTeam/proprietary_vendor_lenovo"
+		name="Sailfish-on-karatep/proprietary_vendor_lenovo"
 		revision="lineage-18.1" />
 	<project path="packages/resources/devicesettings"
 		name="LineageOS/android_packages_resources_devicesettings"
 		revision="lineage-18.1" />
 	<project path="rpm/"
- 		name="theflyingrahul/droid-hal-karatep" revision="master" />
+ 		name="Sailfish-on-karatep/droid-hal-karatep" revision="hybris-18.1" />
 	<project path="hybris/droid-configs"
-		name="theflyingrahul/droid-config-karatep" revision="master" />
+		name="Sailfish-on-karatep/droid-config-karatep" revision="hybris-18.1" />
 	<project path="hybris/droid-hal-version-karatep"
-		name="theflyingrahul/droid-hal-version-karatep" revision="master" />
+		name="Sailfish-on-karatep/droid-hal-version-karatep" revision="hybris-18.1" />
 </manifest>
