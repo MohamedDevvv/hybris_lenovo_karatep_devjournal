@@ -25,4 +25,6 @@ Resources:
 Commands:
 - (Update Platform SDK, Tooling, and Target): "sdk-foreach-su -ly ssu re some_version" then "sdk-foreach-su -ly zypper ref" and finally "sdk-foreach-su -ly zypper dup"
 
-
+Reverse internet tethering:
+- Follow HADK
+- https://forum.sailfishos.org/t/using-internet-over-rndis-usb-computer-reverse-tethering/10104/6
