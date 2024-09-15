@@ -15,7 +15,8 @@ Notes:
 - Stop system init to prevent bootloop: Create file init_enter_debug2 to sailfish os root i.e. in /data/.stowaways/sailfishos/init_enter_debug2 (Thanks @mal)
 - Files on dcd/sparse/ gets copied onto the device.
 - Symlink /apex .so libraries into /odm on device or /sparse/odm on dev machine.
-- Spam "Expecting header 0x53595354 but found 0x564e4452. Mixing copies of libbinder?". Kill that process to restart vndservicemanager. Need to find a permanent fix.
+- Spam "Expecting header 0x53595354 but found 0x564e4452. Mixing copies of libbinder?". Kill that process to restart vndservicemanager. Need to find a permanent fix. Dirty fix: "killall vndservicemanager" (at boot)
+- Missing battery info? Add hw-settings.ini to specify sensor information. Refer hadk-faq
 
 Resources:
 - (ofono conflict) https://sailfishos.wiki/books/hadk/page/hadk-hot https://irclogs.sailfishos.org/logs/%23sailfishos-porters/%23sailfishos-porters.2023-02-03.log.html
