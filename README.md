@@ -1,6 +1,68 @@
 SailfishOS HADK Scratchpad for lenovo_karatep
 - based on lineage/hybris-18.1
 
+Status
+
+| **Feature**           | **Status**             |
+|-----------------------|------------------------|
+| **Linux Kernel**      | 3.18                   |
+| **Display**           | Y                      |
+| **Touch**             | Y                      |
+| **Notification LED**  | Unknown (lights up)    |
+| **Audio**             |                        |
+| - Loudspeaker         | Y                      |
+| - 3.5mm               | N (detected)           |
+| - Earpiece            | Unknown                |
+| **NFC**               | NA                     |
+| **Bluetooth**         | N                      |
+| **GSM**               |                        |
+| - Slot 1              |                        |
+|   - Signal            | Y                      |
+|   - Call              | Unknown                |
+|   - Data              | N                      |
+|   - SMS               | Unknown                |
+|   - VoLTE             | jolla proprietary      |
+| - Slot 2              | Network: Denied        |
+| **WLAN**              |                        |
+| - Connect             | N                      |
+| - Hotspot             | N                      |
+| **GPS**               | Unknown                |
+| **Camera**            |                        |
+| - Front               | Y (worked once)        |
+| - Rear                | Y (worked once)        |
+| - Flash               | Unknown                |
+| **Fingerprint**       | N                      |
+| **Sensors**           | Unknown (rotation works)|
+| - ALS                 |                        |
+| - PS                  |                        |
+| - Accel.              |                        |
+| - Gyro.               |                        |
+| - Magne.              |                        |
+| **Keys**              |                        |
+| - Power               | Y                      |
+| - Vol+                | Y                      |
+| - Vol-                | Y                      |
+| - Soft keys           |                        |
+|   - Back              | Y                      |
+|   - Home              | N                      |
+|   - Nav               | N                      |
+| **Vibra**             | Y                      |
+| **Haptics**           | NA                     |
+| **Power Mgmt.**       | Unknown                |
+| **RTC alarms**        | Unknown                |
+| **USB**               |                        |
+| - Net                 | Y                      |
+| - Data                | Y                      |
+| - Charge              | Y                      |
+| **FM Radio**          | Unknown                |
+
+To fix:
+- killall vndservicemanager on boot
+- systemctl restart ofono on boot
+- 3.5mm audio routing
+- RIL flaky
+- Cameras flaky
+
 Pixel ratio is 1.6
 
 Notes:
@@ -17,6 +79,7 @@ Notes:
 - Symlink /apex .so libraries into /odm on device or /sparse/odm on dev machine.
 - Spam "Expecting header 0x53595354 but found 0x564e4452. Mixing copies of libbinder?". Kill that process to restart vndservicemanager. Need to find a permanent fix. Dirty fix: "killall vndservicemanager" (at boot)
 - Missing battery info? Add hw-settings.ini to specify sensor information. Refer hadk-faq
+- Sailjail fixes: Enable CONFIG_UTS_NS, CONFIG_IPC_NS, CONFIG_USER_NS, CONFIG_PID_NS, CONFIG_NET_NS, CONFIG_NF_CONNTRACK_NETBIOS_NS in karatep_defconfig
 
 Resources:
 - (ofono conflict) https://sailfishos.wiki/books/hadk/page/hadk-hot https://irclogs.sailfishos.org/logs/%23sailfishos-porters/%23sailfishos-porters.2023-02-03.log.html
