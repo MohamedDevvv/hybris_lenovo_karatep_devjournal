@@ -13,8 +13,9 @@ Status
 | - Loudspeaker         | Y                      |
 | - 3.5mm               | N (detected)           |
 | - Earpiece            | Unknown                |
+| - BT audio            | N                      |
 | **NFC**               | NA                     |
-| **Bluetooth**         | N                      |
+| **Bluetooth**         | Y (needs testing)      |
 | **GSM**               |                        |
 | - Slot 1              |                        |
 |   - Signal            | Y                      |
@@ -28,8 +29,8 @@ Status
 | - Hotspot             | N                      |
 | **GPS**               | Unknown                |
 | **Camera**            |                        |
-| - Front               | Y (worked once)        |
-| - Rear                | Y (worked once)        |
+| - Front               | Y                      |
+| - Rear                | Y                      |
 | - Flash               | Unknown                |
 | **Fingerprint**       | N                      |
 | **Sensors**           | Unknown (rotation works)|
