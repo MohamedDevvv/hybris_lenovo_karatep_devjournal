@@ -62,6 +62,11 @@ To fix:
 - 3.5mm audio routing
 - RIL flaky
 - Cameras flaky
+- Rahul, [9/17/24 2:20 AM]
+Okay, so I tried to restart the device. This time bluebinder is unmasked. wlan0 doesn't show up. modprobe wlan says no device named wlan. BT MAC is okay, however bluebinder doesn't start, stays at "activating". Masked bluebinder and restarted, wlan works fine. Also, BT works when I start bluebinder service after boot
+
+Rahul, [9/17/24 2:21 AM]
+Could this be related to wlan mac being incorrect?
 
 Pixel ratio is 1.6
 
