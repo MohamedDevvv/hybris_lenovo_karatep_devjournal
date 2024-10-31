@@ -12,9 +12,6 @@
 	<project path="vendor/lenovo"
 		name="Sailfish-on-karatep/proprietary_vendor_lenovo"
 		revision="lineage-18.1" />
-	<project path="packages/resources/devicesettings"
-		name="LineageOS/android_packages_resources_devicesettings"
-		revision="lineage-18.1" />
 	<project path="rpm/"
  		name="Sailfish-on-karatep/droid-hal-karatep" revision="hybris-18.1" />
 	<project path="hybris/droid-configs"
