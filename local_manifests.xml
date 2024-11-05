@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<project path="device/lenovo/karatep"
-		name="Sailfish-on-karatep/android_device_lenovo_karatep"
-		revision="hybris-18.1" />
-	<project path="device/lenovo/karate-common"
-		name="Sailfish-on-karatep/android_device_lenovo_karate-common"
-		revision="hybris-18.1" />
-	<project path="kernel/lenovo/msm8937"
-		name="Sailfish-on-karatep/android_kernel_lenovo_msm8937"
-		revision="hybris-18.1" />
-	<project path="vendor/lenovo"
-		name="Sailfish-on-karatep/proprietary_vendor_lenovo"
-		revision="lineage-18.1" />
-	<project path="rpm/"
- 		name="Sailfish-on-karatep/droid-hal-karatep" revision="hybris-18.1" />
-	<project path="hybris/droid-configs"
-		name="Sailfish-on-karatep/droid-config-karatep" revision="hybris-18.1" />
-	<project path="hybris/droid-hal-version-karatep"
-		name="Sailfish-on-karatep/droid-hal-version-karatep" revision="hybris-18.1" />
+
+  <remote name="t13" fetch="https://github.com/MohamedDevvv" />
+
+
+<project path="device/lenovo/karatep" name="android_device_lenovo_karatep" remote="t13" revision="hybris-18.1" />
+
+<project path="device/lenovo/karate-common" name="android_device_lenovo_karate-common" remote="t13" revision="hybris-18.1" />
+
+<project path="kernel/lenovo/msm8937" name="android_kernel_lenovo_msm8937" remote="t13" revision="hybris-18.1" />
+
+<project path="vendor/lenovo" name="proprietary_vendor_lenovo" remote="t13" revision="hybris-18.1" />
+
+<project path="vendor/lenovo" name="proprietary_vendor_lenovo" remote="t13" revision="lineage-18.1" />
+
+<project path="rpm/" name="droid-hal-karatep" remote="t13" revision="hybris-18.1" />
+
+<project path="hybris/droid-configs" name="droid-config-karatep" remote="t13" revision="hybris-18.1" />
+
+<project path="hybris/droid-hal-version-karatep" name="droid-hal-version-karatep" remote="t13" revision="hybris-18.1" />
+
 </manifest>
