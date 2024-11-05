@@ -10,8 +10,6 @@
 
 <project path="kernel/lenovo/msm8937" name="android_kernel_lenovo_msm8937" remote="t13" revision="hybris-18.1" />
 
-<project path="vendor/lenovo" name="proprietary_vendor_lenovo" remote="t13" revision="hybris-18.1" />
-
 <project path="vendor/lenovo" name="proprietary_vendor_lenovo" remote="t13" revision="lineage-18.1" />
 
 <project path="rpm/" name="droid-hal-karatep" remote="t13" revision="hybris-18.1" />
